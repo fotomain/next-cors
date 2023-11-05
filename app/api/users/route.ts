@@ -44,16 +44,16 @@ const getCorsHeaders = (origin: string) => {
 // /**
 //  * Basic OPTIONS Request to simuluate OPTIONS preflight request for mutative requests
 //  */
-// export const OPTIONS = async (request: NextRequest) => {
-//   // Return Response
-//   return NextResponse.json(
-//     {},
-//     {
-//       status: 200,
-//       headers: getCorsHeaders(request.headers.get("origin") || ""),
-//     }
-//   );
-// };
+export const OPTIONS = async (request: NextRequest) => {
+  // Return Response
+  return NextResponse.json(
+    {},
+    {
+      status: 200,
+      headers: getCorsHeaders(request.headers.get("origin") || ""),
+    }
+  );
+};
 
 export const GET = async (request: NextRequest) => {
   // Return Response
