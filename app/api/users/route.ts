@@ -1,5 +1,6 @@
 // Imports
 // ========================================================
+
 import { NextResponse, type NextRequest } from "next/server";
 
 // Config CORS
@@ -14,7 +15,7 @@ const getCorsHeaders = (origin: string) => {
   const headers = {
     "Access-Control-Allow-Methods": '*',
     "Access-Control-Allow-Headers": '*',
-    "Access-Control-Allow-Origin":  '*',
+    "Access-Control-Allow-Origin":  '*'
     // "Access-Control-Allow-Methods": `${process.env.ALLOWED_METHODS}`,
     // "Access-Control-Allow-Headers": `${process.env.ALLOWED_HEADERS}`,
     // "Access-Control-Allow-Origin": `${process.env.DOMAIN_URL}`,
