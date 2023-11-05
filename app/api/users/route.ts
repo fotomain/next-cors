@@ -20,6 +20,7 @@ const getCorsHeaders = (origin: string) => {
     // "Access-Control-Allow-Headers": `${process.env.ALLOWED_HEADERS}`,
     // "Access-Control-Allow-Origin": `${process.env.DOMAIN_URL}`,
   };
+}
 
 //   // If no allowed origin is set to default server origin
 //   if (!process.env.ALLOWED_ORIGIN || !origin) return headers;
@@ -54,11 +55,6 @@ const getCorsHeaders = (origin: string) => {
 //   );
 // };
 
-/**
- * Basic GET Request to simuluate LIST in LCRUD
- * @param request
- * @returns
- */
 export const GET = async (request: NextRequest) => {
   // Return Response
   return NextResponse.json(

@@ -1,5 +1,4 @@
-// Imports
-// ========================================================
+
 import { NextResponse, type NextRequest } from "next/server";
 
 // Config
