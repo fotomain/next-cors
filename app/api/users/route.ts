@@ -70,7 +70,7 @@ export const GET = async (request: NextRequest) => {
     },
     {
       status: 200,
-      // headers: getCorsHeaders(request.headers.get("origin") || ""),
+      headers: getCorsHeaders(request.headers.get("origin") || ""),
     }
   );
 };
