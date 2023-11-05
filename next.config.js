@@ -20,10 +20,10 @@ const nextConfig = {
             value: "GET, POST, PUT, DELETE, OPTIONS",
           },
           // Allows for specific headers accepted (These are a few standard)
-          // {
-          //   key: "Access-Control-Allow-Headers",
-          //   value: "Content-Type, Authorization",
-          // },
+          {
+            key: "Access-Control-Allow-Headers",
+            value: "Content-Type, Authorization",
+          },
         ],
       },
     ];
